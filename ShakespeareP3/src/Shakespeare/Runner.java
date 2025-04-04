@@ -24,7 +24,7 @@ public class Runner {
 				storage.add(curr);
 				
 			}
-			for(int i = 0; i < storage.size(); i++) {
+			for(int i = 0; i < storage.size()-1; i++) {
 				String wordOne = storage.get(i);
 				String wordTwo = storage.get(i+1);
 				HashMap<String, Integer> nextWord = new HashMap(); 
@@ -46,13 +46,21 @@ public class Runner {
 				
 			}
 			
-			System.out.println(artWords.get("the"));
+			System.out.println(artWords.get("thy"));
 			
 		}
 		catch(Exception e) {
 			
 			System.out.println(e);
 		}
+	}
+	
+	public static String mostLikely(String checkWord, HashMap<String, HashMap<String, Integer>> words) {
+		 
+		
+		
+		return checkWord;
+		
 	}
 	
 }
